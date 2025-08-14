@@ -1,0 +1,76 @@
+<app-nav></app-nav>
+
+<section class="relative max-w-6xl mx-auto px-6 py-16">
+  <div
+    class="hero-blur"
+    style="
+      background: linear-gradient(
+        135deg,
+        hsl(47deg 100% 53%),
+        hsl(350deg 100% 73%)
+      );
+    "
+  ></div>
+  <div class="text-center mb-12">
+    <div
+      class="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-blue-50 text-blue-700 border border-blue-200 mb-4"
+    >
+      ⚡ Pre-Commit Hook
+    </div>
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+      Pre-Commit Hook Setup
+    </h2>
+    <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+      This hook runs before a commit is created. We use it to run lint-staged
+      and format staged files to maintain code quality.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="p-8 rounded-2xl border border-gray-200 bg-white">
+      <div
+        class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6"
+      >
+        <div class="text-2xl">⚙️</div>
+      </div>
+      <h3 class="font-bold text-gray-900 text-lg sm:text-xl mb-3">
+        Configuration
+      </h3>
+      <p class="text-sm sm:text-base text-gray-600 mb-4">
+        Add a Husky hook file:
+        <code class="bg-gray-100 px-2 py-1 rounded text-xs sm:text-sm"
+          >.husky/pre-commit</code
+        >:
+      </p>
+      <pre
+        class="mt-3 bg-gray-50 border border-gray-200 p-4 rounded-lg text-sm overflow-auto"
+        >{{ codePreCommitHook }}</pre
+      >
+    </div>
+
+    <div class="p-8 rounded-2xl border border-gray-200 bg-white">
+      <div
+        class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-6"
+      >
+        <div class="text-2xl">🎯</div>
+      </div>
+      <h3 class="font-bold text-gray-900 text-lg sm:text-xl mb-3">
+        lint-staged
+      </h3>
+      <p class="text-sm sm:text-base text-gray-600 mb-4">
+        Configure commands per file pattern in
+        <code class="bg-gray-100 px-2 py-1 rounded text-xs sm:text-sm"
+          >.lintstagedrc.json</code
+        >:
+      </p>
+      <pre
+        class="mt-3 bg-gray-50 border border-gray-200 p-4 rounded-lg text-sm overflow-auto"
+        >{{ codeLintStagedConfig }}</pre
+      >
+    </div>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6">
+  <app-footer></app-footer>
+</section>
