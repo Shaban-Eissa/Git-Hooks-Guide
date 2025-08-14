@@ -2,6 +2,10 @@
 
 A comprehensive interactive web application for learning Git hooks, lint-staged, commitlint, and modern development workflows. Master the essential tools that power automated code quality and consistent development practices.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4d3c141a-77ba-47ef-b6a8-6b0fe08da5f4" alt="Git Hooks Workshop Demo" width="100%" style="max-width: 1200px; height: auto;" />
+</p>
+
 ## 🌟 Features
 
 ### 📚 Comprehensive Learning Modules
