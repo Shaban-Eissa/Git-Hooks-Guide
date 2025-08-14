@@ -1,0 +1,174 @@
+<div class="w-full sticky top-0 z-[9999] px-8 py-6 bg-transparent">
+  <nav
+    class="mx-auto rounded-2xl border backdrop-blur-md transition-all duration-300"
+    style="
+      background-color: rgba(255, 255, 255, 0.85);
+      border-color: rgba(204, 204, 204, 0.3);
+    "
+  >
+    <div class="px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a routerLink="/overview" class="flex items-center space-x-3">
+          <div
+            class="w-6 h-6 sm:w-8 sm:h-8 rounded-lg flex items-center justify-center"
+            style="background-color: #240029"
+          >
+            <span class="text-white font-bold text-xs sm:text-sm">🔗</span>
+          </div>
+          <span class="font-bold text-base sm:text-xl" style="color: #222222"
+            >Git Hooks</span
+          >
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden xl:flex items-center space-x-4">
+        <a
+          routerLink="/pre-commit"
+          class="px-4 py-2 rounded-lg font-medium"
+          style="color: #333333"
+        >
+          Pre-Commit
+        </a>
+        <a
+          routerLink="/post-checkout"
+          class="px-4 py-2 rounded-lg font-medium"
+          style="color: #333333"
+        >
+          Post-Checkout
+        </a>
+        <a
+          routerLink="/pre-push"
+          class="px-4 py-2 rounded-lg font-medium"
+          style="color: #333333"
+        >
+          Pre-Push
+        </a>
+        <a
+          routerLink="/lint-staged"
+          class="px-4 py-2 rounded-lg font-medium"
+          style="color: #333333"
+        >
+          lint-staged
+        </a>
+        <a
+          routerLink="/commit-lint"
+          class="px-4 py-2 rounded-lg font-medium"
+          style="color: #333333"
+        >
+          commitlint
+        </a>
+        <a
+          routerLink="/conventional-commits"
+          class="px-4 py-2 rounded-lg font-medium"
+          style="color: #333333"
+        >
+          Conventional Commits
+        </a>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center space-x-3">
+        <a
+          routerLink="/pre-commit"
+          class="inline-flex items-center px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg text-xs sm:text-sm font-medium border"
+          style="
+            background-color: #fbbc04;
+            color: #000000;
+            border-color: #29002933;
+          "
+        >
+          Get Started
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button
+          class="md:hidden p-1.5 sm:p-2 rounded-lg"
+          style="color: #333333"
+          (click)="toggleMobileMenu()"
+        >
+          <svg
+            class="w-5 h-5 sm:w-6 sm:h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        *ngIf="isMobileMenuOpen"
+        class="absolute top-full left-0 right-0 mt-2 p-4 bg-white border rounded-2xl shadow-xl md:hidden"
+        style="border-color: rgba(204, 204, 204, 0.3)"
+      >
+        <div class="flex flex-col space-y-2">
+          <a
+            routerLink="/overview"
+            class="px-4 py-3 rounded-lg font-medium"
+            style="color: #333333"
+            (click)="toggleMobileMenu()"
+          >
+            Overview
+          </a>
+          <a
+            routerLink="/pre-commit"
+            class="px-4 py-3 rounded-lg font-medium"
+            style="color: #333333"
+            (click)="toggleMobileMenu()"
+          >
+            Pre-Commit
+          </a>
+          <a
+            routerLink="/post-checkout"
+            class="px-4 py-3 rounded-lg font-medium"
+            style="color: #333333"
+            (click)="toggleMobileMenu()"
+          >
+            Post-Checkout
+          </a>
+          <a
+            routerLink="/pre-push"
+            class="px-4 py-3 rounded-lg font-medium"
+            style="color: #333333"
+            (click)="toggleMobileMenu()"
+          >
+            Pre-Push
+          </a>
+          <a
+            routerLink="/lint-staged"
+            class="px-4 py-3 rounded-lg font-medium"
+            style="color: #333333"
+            (click)="toggleMobileMenu()"
+          >
+            lint-staged
+          </a>
+          <a
+            routerLink="/commit-lint"
+            class="px-4 py-3 rounded-lg font-medium"
+            style="color: #333333"
+            (click)="toggleMobileMenu()"
+          >
+            commitlint
+          </a>
+          <a
+            routerLink="/conventional-commits"
+            class="px-4 py-3 rounded-lg font-medium"
+            style="color: #333333"
+            (click)="toggleMobileMenu()"
+          >
+            Conventional Commits
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,122 @@
+<div class="px-4 py-2">
+  <app-nav></app-nav>
+  <section
+    class="relative overflow-hidden pb-0 rounded-3xl mx-auto"
+    style="
+      background: linear-gradient(
+        145deg,
+        hsl(350deg 100% 93%),
+        hsl(47deg 100% 87%) 40%,
+        hsl(47deg 100% 87%) 60%,
+        hsl(47deg 100% 53%)
+      );
+    "
+  >
+    <div class="container max-w-6xl mx-auto px-4 sm:px-6">
+      <!-- Announcement Badge -->
+      <div class="flex justify-center my-8 sm:mb-6 pt-16 sm:pt-32">
+        <div
+          class="inline-flex items-center rounded-full border hover:shadow-md transition-all duration-300"
+          style="
+            border-color: #29002933;
+            background-color: #2900291c;
+            backdrop-filter: blur(8px);
+          "
+        >
+          <div
+            class="px-3 py-1.5 ml-2 rounded-full text-xs font-semibold text-white whitespace-nowrap"
+            style="background-color: #240029"
+          >
+            NEW
+          </div>
+          <div class="flex items-center gap-2 px-5 py-2">
+            <div class="text-sm font-medium text-center" style="color: #333333">
+              Interactive Git Hooks Tutorial
+            </div>
+            <svg
+              class="w-3.5 h-3.5 flex-shrink-0"
+              style="color: #333333"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Heading -->
+      <div class="text-center mb-4 sm:mb-6">
+        <h1
+          class="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-4 sm:mb-6"
+          style="color: #222222"
+        >
+          The Git Hooks<br />Learning Platform
+        </h1>
+      </div>
+
+      <!-- Description -->
+      <div class="text-center mb-6 sm:mb-8">
+        <div
+          class="max-w-4xl mx-auto text-base sm:text-lg md:text-xl leading-relaxed"
+          style="color: #290029ad"
+        >
+          <div class="break-words">
+            <span
+              >Pre-commit, lint-staged, commitlint, commitizen—it's all here.
+              Ditch the manual code reviews and automate your
+            </span>
+            <span class="underline font-bold" style="color: #240029"
+              >development workflow</span
+            >,
+            <span class="underline font-bold" style="color: #240029"
+              >code quality</span
+            >,
+            <span class="underline font-bold" style="color: #240029"
+              >commit standards</span
+            >,
+            <span class="underline font-bold" style="color: #240029"
+              >testing pipeline</span
+            >, or
+            <span class="underline font-bold" style="color: #240029"
+              >deployment process</span
+            >
+            using modern Git hooks.
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Buttons -->
+      <div
+        class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-6 sm:mb-8"
+      >
+        <a
+          routerLink="/simulator"
+          class="btn-primary inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium text-base shadow-sm border w-full sm:w-auto"
+          style="
+            background-color: #fbbc04;
+            color: #000000;
+            border-color: #29002933;
+          "
+        >
+          <span
+            >Start Learning<span class="hidden sm:inline"> for free</span></span
+          >
+        </a>
+        <a
+          routerLink="/pre-commit"
+          class="btn-secondary inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium text-base border w-full sm:w-auto"
+          style="background-color: white; color: #333333; border-color: #cccccc"
+        >
+          <span>Is this for me?</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
