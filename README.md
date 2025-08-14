@@ -102,25 +102,12 @@ We welcome contributions! Please follow these steps:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-### Commit Message Format
-This project follows [Conventional Commits](https://conventionalcommits.org/):
-
-```
-type(scope): description
-
-[optional body]
-
-[optional footer(s)]
-```
-
-**Types**: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `build`, `ci`, `chore`
-
 ## 📚 Resources
 
 - [Husky Documentation](https://typicode.github.io/husky/)
 - [lint-staged GitHub](https://github.com/okonet/lint-staged)
 - [commitlint Documentation](https://commitlint.js.org/)
-- [Conventional Commits Specification](https://conventionalcommits.org/)
+- [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/)
 - [Angular Documentation](https://angular.dev/)
 
 ## 🐛 Issues & Support
