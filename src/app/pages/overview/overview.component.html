@@ -1,0 +1,344 @@
+<app-hero></app-hero>
+
+<!-- Git Hooks Section - Clean Sevalla Style -->
+<section class="max-w-6xl mx-auto px-6 py-16">
+  <div class="text-center mb-12">
+    <div
+      class="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-blue-50 text-blue-700 border border-blue-200 mb-4"
+    >
+      🔗 Essential Git Hooks
+    </div>
+    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+      Automate Your Workflow
+    </h2>
+    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+      Master the essential Git hooks that power modern development workflows and
+      ensure code quality at every step.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <a
+      routerLink="/pre-commit"
+      class="group p-8 rounded-2xl border border-gray-200 bg-white"
+    >
+      <div
+        class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6"
+      >
+        <div class="text-2xl">⚡</div>
+      </div>
+      <h3 class="font-bold text-gray-900 text-xl mb-3">Pre-Commit</h3>
+      <p class="text-gray-600 mb-4">
+        Run lint-staged and format files before commits to maintain code
+        quality.
+      </p>
+      <div class="flex items-center text-blue-600">
+        <span class="font-medium">Learn more</span>
+        <svg
+          class="ml-2 w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          ></path>
+        </svg>
+      </div>
+    </a>
+
+    <a
+      routerLink="/post-checkout"
+      class="group p-8 rounded-2xl border border-gray-200 bg-white"
+    >
+      <div
+        class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-6"
+      >
+        <div class="text-2xl">🔄</div>
+      </div>
+      <h3 class="font-bold text-gray-900 text-xl mb-3">Post-Checkout</h3>
+      <p class="text-gray-600 mb-4">
+        Sync environment and regenerate files after branch switches.
+      </p>
+      <div class="flex items-center text-blue-600">
+        <span class="font-medium">Learn more</span>
+        <svg
+          class="ml-2 w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          ></path>
+        </svg>
+      </div>
+    </a>
+
+    <a
+      routerLink="/pre-push"
+      class="group p-8 rounded-2xl border border-gray-200 bg-white"
+    >
+      <div
+        class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6"
+      >
+        <div class="text-2xl">🚀</div>
+      </div>
+      <h3 class="font-bold text-gray-900 text-xl mb-3">Pre-Push</h3>
+      <p class="text-gray-600 mb-4">
+        Run tests and checks before pushing to remote repositories.
+      </p>
+      <div class="flex items-center text-blue-600">
+        <span class="font-medium">Learn more</span>
+        <svg
+          class="ml-2 w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          ></path>
+        </svg>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- Quality Tools Section -->
+<section class="bg-gray-50 py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <div
+        class="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-orange-50 text-orange-700 border border-orange-200 mb-4"
+      >
+        🛠️ Quality Tools
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        Code Quality & Standards
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Enforce consistent code quality and commit message standards across your
+        entire development team.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <a
+        routerLink="/lint-staged"
+        class="group p-10 rounded-2xl border border-gray-200 bg-white"
+      >
+        <div
+          class="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6"
+        >
+          <div class="text-3xl">🎯</div>
+        </div>
+        <h3 class="font-bold text-gray-900 text-2xl mb-4">lint-staged</h3>
+        <p class="text-gray-600 text-lg mb-6">
+          Only lint and format changed files for lightning-fast commits without
+          compromising quality.
+        </p>
+        <div class="flex items-center text-blue-600">
+          <span class="font-medium">Explore tool</span>
+          <svg
+            class="ml-2 w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            ></path>
+          </svg>
+        </div>
+      </a>
+
+      <a
+        routerLink="/commit-lint"
+        class="group p-10 rounded-2xl border border-gray-200 bg-white"
+      >
+        <div
+          class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6"
+        >
+          <div class="text-3xl">📝</div>
+        </div>
+        <h3 class="font-bold text-gray-900 text-2xl mb-4">
+          commitlint + commitizen
+        </h3>
+        <p class="text-gray-600 text-lg mb-6">
+          Enforce conventional commits with interactive prompts and automated
+          validation.
+        </p>
+        <div class="flex items-center text-blue-600">
+          <span class="font-medium">Explore tool</span>
+          <svg
+            class="ml-2 w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            ></path>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Conventional Commits Image Section -->
+<section
+  class="max-w-6xl mx-auto px-6 py-16 rounded-3xl my-8"
+  style="
+    background: linear-gradient(
+      145deg,
+      hsl(350deg 100% 93%),
+      hsl(47deg 100% 87%) 40%,
+      hsl(47deg 100% 87%) 60%,
+      hsl(47deg 100% 87%)
+    );
+  "
+>
+  <div class="grid md:grid-cols-2 gap-8 items-center">
+    <!-- Content Column -->
+    <div class="space-y-6">
+      <div>
+        <h2 class="text-3xl font-bold mb-4" style="color: #222222">
+          Master Conventional Commits
+        </h2>
+        <p class="text-lg leading-relaxed" style="color: #290029ad">
+          Learn how to write structured, meaningful commit messages that make
+          your project history clear and maintainable. Conventional Commits
+          provide a standardized format that helps automate version management
+          and changelog generation.
+        </p>
+      </div>
+
+      <!-- Key Benefits -->
+      <div class="space-y-4">
+        <div class="flex items-start gap-3">
+          <div class="flex-shrink-0 w-6 h-6 mt-1">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="#240029"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 13l4 4L19 7"
+              ></path>
+            </svg>
+          </div>
+          <p style="color: #290029ad">
+            Automated version control and release management
+          </p>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="flex-shrink-0 w-6 h-6 mt-1">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="#240029"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 13l4 4L19 7"
+              ></path>
+            </svg>
+          </div>
+          <p style="color: #290029ad">
+            Clear and structured commit history for better collaboration
+          </p>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="flex-shrink-0 w-6 h-6 mt-1">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="#240029"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 13l4 4L19 7"
+              ></path>
+            </svg>
+          </div>
+          <p style="color: #290029ad">
+            Automatic changelog generation from commit messages
+          </p>
+        </div>
+      </div>
+
+      <!-- CTA Button -->
+      <div class="pt-4">
+        <a
+          href="/conventional-commits"
+          class="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base rounded-lg font-medium transition-all duration-300 w-full sm:w-auto justify-center sm:justify-start border"
+          style="
+            background-color: #fbbc04;
+            color: #000000;
+            border-color: #29002933;
+          "
+        >
+          <span class="whitespace-nowrap"
+            >Learn More About Conventional Commits</span
+          >
+          <svg
+            class="w-4 h-4 sm:w-5 sm:h-5 ml-2 flex-shrink-0"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Image Column -->
+    <div
+      class="w-full overflow-hidden rounded-2xl shadow-lg transform hover:scale-[1.02] transition-transform duration-300"
+      style="border: 1px solid #29002933; background-color: #2900291c"
+    >
+      <img
+        src="https://miro.medium.com/v2/resize:fit:1400/1*vDNSUqlGVEhK2Zf8fBIqFg.png"
+        alt="Conventional Commits Diagram"
+        class="w-full md:h-[450px] object-cover object-center"
+      />
+    </div>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6">
+  <app-footer></app-footer>
+</section>
