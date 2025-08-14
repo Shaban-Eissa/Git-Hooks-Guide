@@ -1,0 +1,325 @@
+<app-nav></app-nav>
+
+<section class="relative max-w-6xl mx-auto px-6 py-16">
+  <div
+    class="hero-blur"
+    style="
+      background: linear-gradient(
+        135deg,
+        hsl(47deg 100% 53%),
+        hsl(350deg 100% 73%)
+      );
+    "
+  ></div>
+
+  <!-- Hero Section -->
+  <div class="text-center mb-16">
+    <div
+      class="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-blue-50 text-blue-700 border border-blue-200 mb-4"
+    >
+      📝 Conventional Commits
+    </div>
+    <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+      Write Better Commit Messages
+    </h1>
+    <p
+      class="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+    >
+      A specification for adding human and machine-readable meaning to commit
+      messages. Follow this guide to create structured, meaningful commit
+      history.
+    </p>
+  </div>
+
+  <!-- Format Overview -->
+  <div
+    class="bg-white/90 backdrop-blur-sm p-8 rounded-2xl border border-gray-200 mb-16"
+  >
+    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-6">
+      Commit Message Format
+    </h2>
+
+    <div class="mb-8">
+      <pre
+        class="bg-gray-50 border border-gray-200 p-4 rounded-lg text-sm overflow-auto font-mono"
+      ><span class="text-purple-600">type</span>(<span class="text-blue-600">scope</span>): <span class="text-green-600">description</span>
+
+<span class="text-gray-500">[optional body]</span>
+
+<span class="text-gray-500">[optional footer(s)]</span></pre>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="space-y-2">
+        <h3 class="font-semibold text-purple-600">Type</h3>
+        <p class="text-gray-600 text-sm">Describes the kind of change</p>
+        <p class="text-gray-500 text-sm italic">Required</p>
+      </div>
+      <div class="space-y-2">
+        <h3 class="font-semibold text-blue-600">Scope</h3>
+        <p class="text-gray-600 text-sm">Section of the codebase</p>
+        <p class="text-gray-500 text-sm italic">Optional</p>
+      </div>
+      <div class="space-y-2">
+        <h3 class="font-semibold text-green-600">Description</h3>
+        <p class="text-gray-600 text-sm">Short summary in present tense</p>
+        <p class="text-gray-500 text-sm italic">Required</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Types Reference -->
+  <div
+    class="bg-white/90 backdrop-blur-sm p-8 rounded-2xl border border-gray-200 mb-16"
+  >
+    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-6">
+      Commit Types
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-sm sm:text-base font-semibold text-gray-900 mb-2">
+            ✨ feat
+          </h3>
+          <p class="text-xs sm:text-sm text-gray-600">
+            A new feature for the user
+          </p>
+          <pre
+            class="mt-2 bg-gray-50 border border-gray-200 p-3 rounded-lg text-sm overflow-auto"
+          >
+feat(auth): add login with Google</pre
+          >
+        </div>
+
+        <div>
+          <h3 class="text-sm sm:text-base font-semibold text-gray-900 mb-2">
+            🐛 fix
+          </h3>
+          <p class="text-xs sm:text-sm text-gray-600">A bug fix for the user</p>
+          <pre
+            class="mt-2 bg-gray-50 border border-gray-200 p-3 rounded-lg text-sm overflow-auto"
+          >
+fix(api): handle null response from server</pre
+          >
+        </div>
+
+        <div>
+          <h3 class="text-sm sm:text-base font-semibold text-gray-900 mb-2">
+            📝 docs
+          </h3>
+          <p class="text-xs sm:text-sm text-gray-600">
+            Documentation only changes
+          </p>
+          <pre
+            class="mt-2 bg-gray-50 border border-gray-200 p-3 rounded-lg text-sm overflow-auto"
+          >
+docs(readme): update installation steps</pre
+          >
+        </div>
+
+        <div>
+          <h3 class="text-sm sm:text-base font-semibold text-gray-900 mb-2">
+            💄 style
+          </h3>
+          <p class="text-xs sm:text-sm text-gray-600">
+            Changes that don't affect code meaning
+          </p>
+          <pre
+            class="mt-2 bg-gray-50 border border-gray-200 p-3 rounded-lg text-sm overflow-auto"
+          >
+style(button): format CSS properties</pre
+          >
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-sm sm:text-base font-semibold text-gray-900 mb-2">
+            ♻️ refactor
+          </h3>
+          <p class="text-xs sm:text-sm text-gray-600">
+            Code change that neither fixes a bug nor adds a feature
+          </p>
+          <pre
+            class="mt-2 bg-gray-50 border border-gray-200 p-3 rounded-lg text-sm overflow-auto"
+          >
+refactor(utils): extract date formatting logic</pre
+          >
+        </div>
+
+        <div>
+          <h3 class="text-sm sm:text-base font-semibold text-gray-900 mb-2">
+            ⚡ perf
+          </h3>
+          <p class="text-xs sm:text-sm text-gray-600">
+            Code change that improves performance
+          </p>
+          <pre
+            class="mt-2 bg-gray-50 border border-gray-200 p-3 rounded-lg text-sm overflow-auto"
+          >
+perf(images): optimize loading of large images</pre
+          >
+        </div>
+
+        <div>
+          <h3 class="text-sm sm:text-base font-semibold text-gray-900 mb-2">
+            🧪 test
+          </h3>
+          <p class="text-xs sm:text-sm text-gray-600">
+            Adding missing tests or correcting existing tests
+          </p>
+          <pre
+            class="mt-2 bg-gray-50 border border-gray-200 p-3 rounded-lg text-sm overflow-auto"
+          >
+test(auth): add unit tests for login flow</pre
+          >
+        </div>
+
+        <div>
+          <h3 class="text-sm sm:text-base font-semibold text-gray-900 mb-2">
+            🏗️ build
+          </h3>
+          <p class="text-xs sm:text-sm text-gray-600">
+            Changes that affect the build system or dependencies
+          </p>
+          <pre
+            class="mt-2 bg-gray-50 border border-gray-200 p-3 rounded-lg text-sm overflow-auto"
+          >
+build(deps): upgrade to Angular 15</pre
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Best Practices -->
+  <div
+    class="bg-white/90 backdrop-blur-sm p-8 rounded-2xl border border-gray-200 mb-16"
+  >
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Best Practices</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-sm sm:text-base font-semibold text-gray-900 mb-4">
+          ✅ Do
+        </h3>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2">
+            <span class="text-green-500 mt-1">✓</span>
+            <p class="text-xs sm:text-sm text-gray-600">
+              Use imperative mood ("add" not "added")
+            </p>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-500 mt-1">✓</span>
+            <p class="text-gray-600">Capitalize first letter of description</p>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-500 mt-1">✓</span>
+            <p class="text-gray-600">Keep description under 50 characters</p>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-500 mt-1">✓</span>
+            <p class="text-gray-600">
+              Use body to explain what and why vs. how
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-sm sm:text-base font-semibold text-gray-900 mb-4">
+          ❌ Don't
+        </h3>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2">
+            <span class="text-red-500 mt-1">✗</span>
+            <p class="text-xs sm:text-sm text-gray-600">
+              End description with a period
+            </p>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-red-500 mt-1">✗</span>
+            <p class="text-xs sm:text-sm text-gray-600">
+              Use past tense ("added" vs "add")
+            </p>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-red-500 mt-1">✗</span>
+            <p class="text-xs sm:text-sm text-gray-600">
+              Include redundant information
+            </p>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-red-500 mt-1">✗</span>
+            <p class="text-xs sm:text-sm text-gray-600">
+              Write overly long descriptions
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Examples -->
+  <div
+    class="bg-white/90 backdrop-blur-sm p-8 rounded-2xl border border-gray-200"
+  >
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Real-World Examples</h2>
+
+    <div class="space-y-6">
+      <div>
+        <h3 class="font-semibold text-gray-900 mb-3">
+          Feature with Breaking Change
+        </h3>
+        <pre
+          class="bg-gray-50 border border-gray-200 p-4 rounded-lg text-sm overflow-auto"
+        >
+feat(api)!: change login API response format
+
+BREAKING CHANGE: The login API now returns a JWT token instead
+of a session cookie.
+
+- Remove cookie-based authentication
+- Add JWT token validation
+- Update client-side token storage</pre
+        >
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-gray-900 mb-3">
+          Bug Fix with Issue Reference
+        </h3>
+        <pre
+          class="bg-gray-50 border border-gray-200 p-4 rounded-lg text-sm overflow-auto"
+        >
+fix(dashboard): resolve data loading issue
+
+The dashboard wasn't loading data when filters were applied.
+This fixes the API query parameter formatting.
+
+Fixes #123</pre
+        >
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-gray-900 mb-3">
+          Refactor with Multiple Scopes
+        </h3>
+        <pre
+          class="bg-gray-50 border border-gray-200 p-4 rounded-lg text-sm overflow-auto"
+        >
+refactor(auth,api): centralize error handling
+
+Move error handling logic to a shared service to ensure
+consistent error messages across the application.</pre
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6">
+  <app-footer></app-footer>
+</section>
